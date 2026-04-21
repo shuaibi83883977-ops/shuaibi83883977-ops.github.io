@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人展示网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">我的个人网站</div>
+            <ul class="nav-menu">
+                <li><a href="#profile">个人简介</a></li>
+                <li><a href="#projects">项目经历</a></li>
+                <li><a href="#food-picker">今天吃什么</a></li>
+                <li><a href="#portfolio">个人作品</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="profile" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="证件照.png" alt="个人照片" onerror="this.src='https://via.placeholder.com/200x200?text=头像'">
+            </div>
+            <div class="profile-info">
+                <h1>你好，我是 <span class="highlight">刘炫凯</span></h1>
+                <p class="title">AI训练师/数据标注</p>
+                <p class="bio">对接需求造优质数据，调优模型适配业务场景。为模型提供优质数据。</p>
+                <div class="skills">
+                  <span class="skill-tag">多模态数据处理</span>
+                                    <span class="skill-tag">Badcase分析</span>
+                                    <span class="skill-tag">数据质量控制</span>
+                                    <span class="skill-tag">评测数据标注</span>
+                                    <span class="skill-tag">对话数据标注</span>
+                                    <span class="skill-tag">图文数据处理</span>
+                                    <span class="skill-tag">团队质量管理</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">项目经历</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%2300ffff' opacity='0.1'/%3E%3Ctext x='150' y='100' text-anchor='middle' fill='%2300ffff' font-size='16' font-family='Arial'%3E项目1%3C/text%3E%3C/svg%3E" alt="项目1">
+                    </div>
+                    <div class="project-content">
+                        <h3>多模态图像数据优化项目</h3>
+                        <p>基于智能电视场景，对文生图数据进行优化与标注，覆盖艺术画、海报、屏保及绘本等方向。负责大规模图文数据质检与抽检，建立问题追踪机制并推动修复闭环；参与规则文档优化，完善边界情况定义；参与模型评测与数据分析，支持效果提升。</p>
+                        <div class="tech-stack">
+                            <span>数据质检</span>
+                            <span>质量评估</span>
+                            <span>模型评测</span>
+                        </div>
+                        <div class="project-results">
+                            <strong>成果：</strong>数据准确率94.33%，结构错误率下降35%+，美学评分提升20%，效率提升18.5%
+                        </div>
+                        <a href="#" class="project-link">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ff00ff' opacity='0.1'/%3E%3Ctext x='150' y='100' text-anchor='middle' fill='%23ff00ff' font-size='16' font-family='Arial'%3E项目2%3C/text%3E%3C/svg%3E" alt="项目2">
+                    </div>
+                    <div class="project-content">
+                        <h3>多模态对话数据训练项目</h3>
+                        <p>围绕电视端多场景对话能力进行数据构建与优化，覆盖娱乐、家居及陪伴等方向。负责对话数据标注与质量控制，确保训练数据稳定性；管理6人小组，进行进度管理并设置阶段检查点；建立每日质量评估机制，对成员表现进行分级；参与规则优化与一致性校准，减少标注偏差。</p>
+                        <div class="tech-stack">
+                            <span>数据标注</span>
+                            <span>团队管理</span>
+                            <span>质量控制</span>
+                        </div>
+                        <div class="project-results">
+                            <strong>成果：</strong>准确率95.6%，指令遵循提升37.1%，意图漂移降低31%，情感评分提升25%
+                        </div>
+                        <a href="#" class="project-link">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Picker Section -->
+    <section id="food-picker" class="food-picker">
+        <div class="container">
+            <h2 class="section-title">今天吃什么？</h2>
+            <div class="food-picker-container">
+                <div class="food-display">
+                    <div class="food-result" id="foodResult">点击按钮开始选择</div>
+                </div>
+                <button class="food-btn" id="foodBtn">
+                    <i class="fas fa-utensils"></i>
+                    今天吃什么？
+                </button>
+                <div class="food-history" id="foodHistory"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">个人作品</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="d886dca200393efe21b3ee85afbee7a9c1b428b87bf7dd8263c354c4bd15b0c4.png" alt="设计作品1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'200\' viewBox=\'0 0 300 200\'%3E%3Crect width=\'300\' height=\'200\' fill=\'%2300ffff\' opacity=\'0.1\'/%3E%3Ctext x=\'150\' y=\'100\' text-anchor=\'middle\' fill=\'%2300ffff\' font-size=\'16\' font-family=\'Arial\'%3E设计作品1%3C/text%3E%3C/svg%3E'">
+                    <div class="portfolio-overlay">
+                        <h3>原创设计</h3>
+                        <p>概念设计作品</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="jimeng-2026-03-27-1767-以俯拍视角呈现，保持娃娃原有脸部形象不变；让娃娃抬头，伸出小手用一根食指与镜头外....png" alt="设计作品2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'200\' viewBox=\'0 0 300 200\'%3E%3Crect width=\'300\' height=\'200\' fill=\'%23ff00ff\' opacity=\'0.1\'/%3E%3Ctext x=\'150\' y=\'100\' text-anchor=\'middle\' fill=\'%23ff00ff\' font-size=\'16\' font-family=\'Arial\'%3E设计作品2%3C/text%3E%3C/svg%3E'">
+                    <div class="portfolio-overlay">
+                        <h3>娃娃设计</h3>
+                        <p>俯拍视角娃娃设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="jimeng-2026-03-26-2171-灵动构图，古早QQ秀全身肖像，亚文化，Y2极繁主义，噪点，漫画凌乱笔触，BJD娃....png" alt="设计作品3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'200\' viewBox=\'0 0 300 200\'%3E%3Crect width=\'300\' height=\'200\' fill=\'%2300ff00\' opacity=\'0.1\'/%3E%3Ctext x=\'150\' y=\'100\' text-anchor=\'middle\' fill=\'%2300ff00\' font-size=\'16\' font-family=\'Arial\'%3E设计作品3%3C/text%3E%3C/svg%3E'">
+                    <div class="portfolio-overlay">
+                        <h3>Y2K风格</h3>
+                        <p>BJD娃娃全身肖像</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <video controls width="100%" height="100%">
+                        <source src="漫剧.mp4" type="video/mp4">
+                        <source src="neir/sucai/图片/漫剧.mp4" type="video/webm">
+                        您的浏览器不支持视频播放，请尝试下载视频文件。
+                    </video>
+                    <div class="portfolio-overlay">
+                        <h3>动画作品</h3>
+                        <p>原创动画短片</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <video controls width="100%" height="100%">
+                        <source src="真人.mp4" type="video/mp4">
+                        <source src="neir/sucai/图片/真人.mp4" type="video/webm">
+                        您的浏览器不支持视频播放，请尝试下载视频文件。
+                    </video>
+                    <div class="portfolio-overlay">
+                        <h3>ai真人作品</h3>
+                        <p>ai生成的真人视频</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="jimeng-2026-03-25-5809-赛璐璐风格，二次元，动漫，特写， _死亡笔记_ 她靠在墙壁上，双手插袋，一条腿弯....png" alt="动漫设计" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'200\' viewBox=\'0 0 300 200\' %3E%3Crect width=\'300\' height=\'200\' fill=\'%23ff6b6b\' opacity=\'0.1\'/%3E%3Ctext x=\'150\' y=\'100\' text-anchor=\'middle\' fill=\'%23ff6b6b\' font-size=\'16\' font-family=\'Arial\'%3E动漫设计%3C/text%3E%3C/svg%3E'">
+                    <div class="portfolio-overlay">
+                        <h3>赛璐璐风格</h3>
+                        <p>二次元动漫特写</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>2889170753@qq.com</span>
+                    </div>
+                    <div class="contact-item" id="wechat-contact" style="cursor: pointer;" title="点击查看微信二维码">
+                        <i class="fab fa-weixin"></i>
+                        <span>13340085586</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>13340085586</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://v.douyin.com/lCN8lslUlEo/ 2@4.com" target="_blank" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                        <span>抖音</span>
+                    </a>
+                    <div class="social-link" id="wechat-link" style="cursor: pointer;" title="点击显示微信二维码">
+                        <i class="fab fa-weixin"></i>
+                        <span>微信</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 个人展示网站. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
